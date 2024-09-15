@@ -1,0 +1,20 @@
+@forward "typography";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    font-optical-sizing: auto;
+
+    &:has(dialog[open]) {
+        overflow: hidden;
+    }
+
+    @apply bg-theme-rose-50;
+}
+
+#root {
+    @apply m-6 sm:m-10 lg:mx-20 lg:my-16 xl:mx-28 xl:my-20;
+}
